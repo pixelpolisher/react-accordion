@@ -33,8 +33,33 @@ img {
     border-bottom: 1px solid #444; }
   .accordion__title {
     font-size: 1.2em;
+    position: relative;
     background: rgba(0, 0, 0, 0.4);
-    padding: 5px 10px; }
+    padding: 5px 40px 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.2s; }
+    .accordion__title:hover {
+      background: rgba(0, 0, 0, 0.3); }
+  .accordion__arrow {
+    position: absolute;
+    right: 20px;
+    top: 16px;
+    transition: transform 0.4s;
+    transform-origin: -4px 7px; }
+    .accordion__arrow::before, .accordion__arrow::after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 2px;
+      height: 14px;
+      background: #999; }
+    .accordion__arrow::before {
+      transform: rotate(45deg); }
+    .accordion__arrow::after {
+      transform: rotate(-45deg);
+      right: 8px; }
+    .accordion__arrow--toggled {
+      transform: rotate(180deg); }
   .accordion__content {
     display: block;
     background: #000;
@@ -58,7 +83,7 @@ img {
     padding: 10px 0; }
   @media (min-width: 620px) {
     .accordion__title {
-      padding: 10px 20px; }
+      padding: 10px 40px 10px 20px; }
     .accordion__content {
       display: flex;
       padding: 20px; }

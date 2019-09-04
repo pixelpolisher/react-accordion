@@ -8,8 +8,42 @@
 
 	&__title {
 		font-size: 1.2em;
+		position: relative;
 		background: rgba(#000, 0.4);
-		padding: 5px 10px;
+		padding: 5px 40px 5px 10px;
+		cursor: pointer;
+		transition: background-color 0.2s;
+
+		&:hover {
+			background: rgba(#000, 0.3);
+		}
+	}
+
+	&__arrow {
+		position: absolute;
+    right: 20px;
+    top: 16px;
+    transition: transform 0.4s;
+    transform-origin: -4px 7px;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+			display: block;
+      width: 2px;
+      height: 14px;
+      background: #999;
+    }
+
+    &::before { transform: rotate(45deg); }
+
+    &::after {
+      transform: rotate(-45deg);
+      right: 8px;
+    }
+
+		&--toggled { transform: rotate(180deg); }
 	}
 
 	&__content {
@@ -46,7 +80,7 @@
 	@media(min-width: $mq-md) {
 
 		&__title {
-			padding: 10px 20px;
+			padding: 10px 40px 10px 20px;
 		}
 
 		&__content {

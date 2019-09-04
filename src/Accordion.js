@@ -118,7 +118,9 @@ class Bellow extends Component {
 
   toggleBellow() {
 
-    const slideDuration = this.props.slideDuration || 900;
+    let slideDuration = this.props.slideDuration + 1 || 901;
+    if(slideDuration <= 1) { slideDuration = 1 };
+    const transition = (slideDuration - 1) + 'ms';
 
     // refuse to slide up or down if the bellow is animating or being measured
     if(this.state.isAnimating || this.state.isMeasuring) {
@@ -126,10 +128,10 @@ class Bellow extends Component {
     }
 
     if(this.state.isOpen) {
-      this.setState({ isOpen: false, isAnimating: true, inlineStyle: { maxHeight: 0 } });
+      this.setState({ isOpen: false, isAnimating: true, inlineStyle: { maxHeight: 0, transitionDuration: transition } });
     }
     else {
-      this.setState({ isOpen: true, isAnimating: true, inlineStyle: { maxHeight: this.state.elementHeight } });
+      this.setState({ isOpen: true, isAnimating: true, inlineStyle: { maxHeight: this.state.elementHeight, transitionDuration: transition } });
     }
 
     // animation is done.
