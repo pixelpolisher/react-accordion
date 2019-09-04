@@ -12,4 +12,4 @@ You will also see any lint errors in the console.
 
 ### Demo
 
-See [https://github.barthendrix.com/accordion] (https://github.barthendrix.com/accordion)
+See [github.pixelpolisher.com/accordion](https://github.barthendrix.com/accordion) for a demo.
