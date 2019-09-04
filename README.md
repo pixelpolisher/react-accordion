@@ -2,7 +2,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Demo
 
-See [github.pixelpolisher.com/accordion](https://github.barthendrix.com/accordion) for a demo.
+See [github.pixelpolisher.com/accordion](https://github.pixelpolisher.com/accordion) for a demo.
 
 ## Available Scripts
 
