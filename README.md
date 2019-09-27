@@ -1,5 +1,3 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 ## Demo
 
 See [github.pixelpolisher.com/accordion](http://github.pixelpolisher.com/accordion) for a demo.
