@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Accordion from './Accordion';
 
 import './css/style.css';
-import { planets } from './Planets';
+import { planets } from './data/Planets';
 
 class App extends Component {
 
