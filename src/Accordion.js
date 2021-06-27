@@ -160,7 +160,7 @@ class Bellow extends Component {
           <div className="accordion__text">{ text }</div>
           { image
             ? <div className="accordion__image">
-                 <img src={image} alt={title} onLoad={this.imageOnLoad} />
+                 <img src={image} alt={title} onLoad={this.imageOnLoad} loading="lazy" />
               </div>
 
             : null
