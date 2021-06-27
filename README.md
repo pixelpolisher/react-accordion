@@ -1,6 +1,6 @@
 ## Demo
 
-See [github.pixelpolisher.com/accordion](https://pp-react-accordion.netlify.app/) for a demo.
+See [https://pp-react-accordion.netlify.app/](https://pp-react-accordion.netlify.app/) for a demo.
 
 ## Available Scripts
 
